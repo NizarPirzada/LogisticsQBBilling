@@ -1,0 +1,7 @@
+
+
+
+// LICENSE DATABASE MIGRATION COMMAND
+add-migration "adding trackable to drivertype" -context LicenseDbContext -OutputDir "DbContext/LicenseDbContext/Migrations"
+
+dotnet ef migrations add vwGuestArrivals

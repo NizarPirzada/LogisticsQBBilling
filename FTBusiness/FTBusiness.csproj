@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="DatabaseSeeder\**" />
+    <EmbeddedResource Remove="DatabaseSeeder\**" />
+    <None Remove="DatabaseSeeder\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="ServiceManager\ServiceAction\DriverRepo.cs~RF15960ee.TMP" />
+    <None Remove="ServiceManager\ServiceAction\EstimateRepo.cs~RFf86ae8.TMP" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="11.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Hosting.Abstractions" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Azure.Services.AppAuthentication" Version="1.6.2" />
+    <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="6.15.0" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.15.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FTCommon\FTCommon.csproj" />
+    <ProjectReference Include="..\FTData\FTData.csproj" />
+    <ProjectReference Include="..\FTEnum\FTEnum.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="ServiceManager\ServiceInterface\ThirdParty\" />
+  </ItemGroup>
+
+</Project>
